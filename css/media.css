@@ -21,7 +21,6 @@
 
 
 
-
 /* HERO */
 @media screen and (max-width: 767px) {
     .hero {
@@ -85,7 +84,7 @@
         margin-right: auto;
         padding-top: 188px;
         padding-bottom: 188px;
-        /* height: 600px; */
+        
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -110,13 +109,6 @@
       }
     }
 
-
-    @media screen and (max-width: 1199px) {
-      .page-navigation::after {
-        margin-bottom: -24px;
-      }
-    }
-    
 /* ---Top prioritues--- */
 @media screen and (max-width: 767px) {
     .page:not(:last-child) {
@@ -244,8 +236,8 @@
       display: flex;
     }
   }
-  
-  /* =====================customers================ */
+
+  /* ---Customers--- */
   @media screen and (max-width: 767px) {
     .customers-item {
       width: calc((100% - 16px) / 2);
@@ -292,7 +284,34 @@
     width: 168px;
   }
 }
+/* ---PORTFOLIO--- */
+@media screen and (min-width: 768px) {
+  .container-buttons {
+    justify-content: center;
+}
+  .portfolio-list {
+    gap: 72px 24px;
+}
+.portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
+}
 
+@media screen and (min-width: 1200px){
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+.container-buttons {
+    margin-bottom: 72px;
+}
+.portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.portfolio-list {
+        gap: 48px 24px;
+    }
+}
 /* ---FOOTER--- */
 @media screen and (max-width: 767px) {
   footer {
@@ -366,7 +385,31 @@
   }
 }
 
+/* ----PORTFOLIO--- */
+/* ---Our project--- */
 
+/* @media screen and (max-width: 767px) {
+  .project {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .btn-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  .project-button {
+    padding: 8px 16px;
+  }
+  .project-book-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .project-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+  }
+} */
 
 /* ---Modal window--- */
 @media screen and (max-width: 479px) {

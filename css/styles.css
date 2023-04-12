@@ -94,8 +94,6 @@ header {
 }
 
 .logo {
-  margin-right: 76px;
-
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -294,6 +292,14 @@ header {
   .page-navigation:focus {
     color: var(--button-color);
   }
+  .header-page-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
 }
 
 /* ---desktop--- */
@@ -306,10 +312,14 @@ header {
   }
   .header-page-connect {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    gap: 40px;
   }
   .mail {
     margin-right: 40px;
+  }
+  .logo {
+    margin-right: 76px;
   }
 }
 
@@ -376,7 +386,11 @@ header {
 .current::after {
   opacity: 1;
 }
-
+@media screen and (max-width: 1199px) {
+  .page-navigation::after {
+    margin-bottom: -24px;
+  }
+}
 /* ---Top prioritues--- */
 
 .visually-hidden {
@@ -637,6 +651,138 @@ footer {
   background-color: var(--button-color);
 }
 
+/* ---PORTFOLIO--- */
+
+/* ---HEADER--- */
+.line {
+  border-bottom: 1px solid var(--paragraph-color);
+  border-top: none;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/* ---Our project--- */
+.portfolio-buttons {
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+font-weight: 500;
+line-height: 1.5;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: var(--logo-color);
+background: var(--team-color);
+border: 1px solid var(--paragraph-color);
+border-radius: 4px;
+cursor: pointer;
+transition: background-color var(--timing-function), color var(--timing-function), box-shadow var(--timing-function), border-color var(--timing-function);
+}
+.portfolio-buttons:is(:hover, :focus) {
+background-color: var(--button-color);
+color: var(--white-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-color: transparent;
+}
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-item {
+background: var(--white-color);
+width: 100%;
+transition: box-shadow var(--timing-function);
+position: relative;
+}
+.portfolio-item:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+.portfolio-title {
+  margin-bottom: 8px;
+  text-decoration: none;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--brend-color);
+}
+.portfolio-title-description {
+  text-decoration: none;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+.portfolio-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  color: var(--team-color);
+  background-color: var(--logo-color);
+  transform: translateY(100%);
+  transition: transform var(--timing-function);
+}
+.portfolio-item:is(:hover, :focus) .portfolio-description {
+  transform: translateY(0%);
+}
+.product-description {
+  border: 1px solid var(--paragraph-color);
+  border-top: none;
+  padding: 32px 16px;
+}
+.portfolio-description-text {
+  font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--team-color);
+}
+.container-buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 48px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+/* ---Overlay--- */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 100%);
+  transition: transform var(--timing-function);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--team-color);
+  background: var(--logo-color);
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal;
+}
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.project-titel:hover .overlay,
+.project-titel:focus .overlay {
+  transform: translate(0, 0);
+}
 
 /* ---Modal window--- */
 .backdrop {

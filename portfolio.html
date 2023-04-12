@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css"/>
+  </head>
+  <body>
+    <!--HEADER   Navigation-->
+    <header class="line">
+      <div class="header-page container">
+        <nav class="header-page-nav">
+          <a class="link logo" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <ul class="link header-page-menu">
+            <li class="menu-item">
+              <a class="link page-navigation" href="index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="link page-navigation current" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="link page-navigation" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="connection">
+          <ul class="link header-page-connect">
+            <li class="mail">
+              <a class="link contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link contacts" href="tel:+110001111111"
+                >+11 (000)-111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="mobile-btn" type="button" data-menu-open>
+          <svg class="mobile-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+          <svg class="mobilemenu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-list">
+          <ul class="mobile-menu-list-wrapper">
+            <li class="mobile-menu-list-icon">
+              <a class="mobile-menu-item" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-list-icon">
+              <a class="mobile-menu-item" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list-icon">
+              <a class="mobile-menu-item" href="#">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-connecting">
+            <li class="mobile-menu-connect">
+              <a class="mobile-menu-connect-tel" href="tel:+11(000)1111111"
+                >+11(000)111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-connect">
+              <a
+                class="mobile-menu-connect-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-soc">
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-icon">
+                <svg class="mobile-soc-net-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-icon">
+                <svg class="mobile-soc-net-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-icon">
+                <svg class="mobile-soc-net-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-icon">
+                <svg class="mobile-soc-net-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Our project -->
+      <section class="portfolio-section">
+        <div class="container container-portfolio">
+          <h1 hidden>Our Products</h1>
+          <ul class="list container-buttons">
+            <li><button type="button" class="portfolio-buttons">All</button></li>
+            <li><button type="button" class="portfolio-buttons">Web Site</button></li>
+            <li><button type="button" class="portfolio-buttons">App</button></li>
+            <li><button type="button" class="portfolio-buttons">Design</button></li>
+            <li><button type="button" class="portfolio-buttons">Marketing</button></li>
+          </ul>
+          <ul class="list portfolio-list">
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/bankapp.jpg" alt="Illustration of banking app" width="360" height="300">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Banking App Interface Concept</h2>
+                  <p class="portfolio-title-description">App</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/cashless.jpg" alt="Payment with phone" width="360" height="300">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Cashless Payment</h2>
+                  <p class="portfolio-title-description">Marketing</p></div>
+                </a>                  
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/meditationapp.jpg" width="360" height="300" alt="Illustration of meditation app">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Meditation App</h2>
+                  <p class="portfolio-title-description">App</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/taxi.jpg" width="360" height="300" alt="Man is driving a car">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Taxi Service</h2>
+                  <p class="portfolio-title-description">Marketing</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/illustrations.jpg" width="360" height="300" alt="Opened screen illustrations app">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Screen Illustrations</h2>
+                  <p class="portfolio-title-description">Design</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/courses.jpg" width="360" height="300" alt="Woman is listening to music">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Online Courses</h2>
+                  <p class="portfolio-title-description">Marketing</p></div>
+                </a>                  
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/instagramconcept.jpg" width="360" height="300" alt="Design concept">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Instagram Stories Concept</h2>
+                  <p class="portfolio-title-description">Design</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/organic.jpg" width="360" height="300" alt="Woman is carrying products">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Organic Food</h2>
+                  <p class="portfolio-title-description">Web Site</p></div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="" class="link">
+                  <div class="portfolio-top-wrap"><img src="./images/portfolio/coffee.jpg" width="360" height="300" alt="Man is making a coffee">
+                  <p class="portfolio-description link portfolio-description-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                <div class="product-description">
+                  <h2 class="portfolio-title">Fresh Coffee</h2>
+                  <p class="portfolio-title-description">Web Site</p></div>
+                </a>
+              </li>
+          </ul>
+        </div>
+    </section>
+  </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container container-footer">
+        <div class="footer-wrapper-logo">
+          <a class="web-logo link" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <p class="text-footer">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="container-social-list-footer">
+          <p class="contact-us">Social media</p>
+          <ul class="social-list-footer">
+            <li class="footer-box-left-title">
+              <a class="social-item-footer link" href="#">
+                <svg class="icon-social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-box-left-title">
+              <a class="social-item-footer link" href="#">
+                <svg class="icon-social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-box-left-title">
+              <a class="social-item-footer link" href="#">
+                <svg class="icon-social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-box-left-title">
+              <a class="social-item-footer link" href="#">
+                <svg class="icon-social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-container-footer">
+          <p class="form-title-footer">Subscribe</p>
+          <form class="modal-form-footer">
+            <label for="E-mail">
+              <input
+                class="modal-input-footer"
+                id="E-mail"
+                type="text"
+                name="E-mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="modal-button-footer" type="submit">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-form-box">
+            <span class="input-title">Name</span>
+            <span class="form-icon-wrapper icon-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="user_name"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-box">
+            <span class="input-title">Phone</span>
+            <span class="form-icon-wrapper icon-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="user_name"
+                required
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-box">
+            <span class="input-title">Email</span>
+            <span class="form-icon-wrapper icon-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="user_name"
+                required
+              />
+
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+
+
+          <label class="textarea-label">
+            <span class="input-title">Comment</span>
+            <textarea
+              name="text"
+              class="text-input icon-wrapper"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <input
+            class="check-icon visually-hidden"
+            id="user-policy"
+            type="checkbox"
+            name="useer_policy"
+          />
+
+          <label for="user-policy" class="user-policy-item"
+            >I accept the terms and conditions of the
+            <a class="policy" href="">Privacy Policy</a></label
+          >
+
+          <div>
+            <button class="modal-form-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
